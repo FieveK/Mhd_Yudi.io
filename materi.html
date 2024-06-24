@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Materi Pemrograman Dasar Python</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="evaluasi.html">Evaluasi</a></li>
+                <li><a href="coding.html">Coding</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="materi">
+            <h2>Materi</h2>
+            <p>Di sini Anda akan belajar dasar-dasar pemrograman Python. Mari kita mulai dengan dasar-dasar sintaks, variabel, tipe data, struktur kondisional, looping, fungsi, dan kelas.</p>
+            
+            <h3>Sintaks Dasar</h3>
+            <p>Python menggunakan indentasi untuk menandakan blok kode. Berikut contoh sederhana:</p>
+            <pre><code>if 5 > 2:
+    print("Five is greater than two!")</code></pre>
+            
+            <h3>Variabel</h3>
+            <p>Variabel digunakan untuk menyimpan nilai. Contoh:</p>
+            <pre><code>x = 5
+y = "Hello, World!"</code></pre>
+            
+            <h3>Tipe Data</h3>
+            <p>Python memiliki beberapa tipe data bawaan, seperti angka, string, dan list. Contoh:</p>
+            <pre><code>x = 5       # int
+y = "Hello"  # str
+z = [1, 2, 3]  # list</code></pre>
+
+            <h3>Struktur Kondisional</h3>
+            <p>Struktur kondisional digunakan untuk membuat keputusan dalam kode. Contoh:</p>
+            <pre><code>if x > y:
+    print("x is greater than y")
+elif x == y:
+    print("x is equal to y")
+else:
+    print("x is less than y")</code></pre>
+
+            <h3>Looping</h3>
+            <p>Python memiliki beberapa cara untuk melakukan looping melalui data, seperti menggunakan for dan while loop. Contoh:</p>
+            <pre><code>for i in range(5):
+    print(i)
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1</code></pre>
+
+            <h3>Fungsi</h3>
+            <p>Fungsi adalah blok kode yang hanya berjalan ketika dipanggil. Contoh:</p>
+            <pre><code>def my_function():
+    print("Hello from a function")
+
+my_function()</code></pre>
+
+            <h3>Kelas dan Objek</h3>
+            <p>Python adalah bahasa pemrograman berorientasi objek. Hampir semuanya adalah objek, dengan propertinya dan metodenya. Contoh:</p>
+            <pre><code>class MyClass:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+
+p1 = MyClass("John", 36)
+p1.greet()</code></pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Pembelajaran Pemrograman Dasar Python</p>
+    </footer>
+</body>
+</html>

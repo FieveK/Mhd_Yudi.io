@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Evaluasi Pemrograman Dasar Python</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="coding.html">Coding</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="evaluasi">
+            <h2>Evaluasi</h2>
+            <form id="evaluation-form">
+                <div>
+                    <label for="code1">Tuliskan kode Python untuk mengalikan dua angka:</label>
+                    <textarea id="code1" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="code2">Tuliskan kode Python untuk mencetak "Hello, Python!":</label>
+                    <textarea id="code2" rows="2" required></textarea>
+                </div>
+                <div>
+                    <label for="code3">Tuliskan kode Python untuk membuat loop for dari 1 hingga 5:</label>
+                    <textarea id="code3" rows="3" required></textarea>
+                </div>
+                <button type="button" onclick="evaluateCode()">Submit</button>
+            </form>
+            <div id="evaluation-results"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Pembelajaran Pemrograman Dasar Python</p>
+    </footer>
+
+    <script>
+        function evaluateCode() {
+            const code1 = document.getElementById('code1').value;
+            const code2 = document.getElementById('code2').value;
+            const code3 = document.getElementById('code3').value;
+            const resultDiv = document.getElementById('evaluation-results');
+            let score = 0;
+
+            if (code1.includes('*')) {
+                score++;
+            }
+            if (code2.includes('print("Hello, Python!")')) {
+                score++;
+            }
+            if (code3.includes('for') && code3.includes('range(1, 6)')) {
+                score++;
+            }
+
+            resultDiv.innerHTML = `<p>Total skor Anda: ${score} dari 3</p>`;
+        }
+    </script>
+</body>
+</html>
